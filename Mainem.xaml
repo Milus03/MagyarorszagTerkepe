@@ -1,0 +1,17 @@
+<Window x:Class="HungaryMap.Mainem"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HungaryMap"
+        mc:Ignorable="d"
+        Title="Hungary Map" Height="350" Width="600" SizeChanged="ResizeMap">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="1*"/>
+            <ColumnDefinition Width="25*"/>
+        </Grid.ColumnDefinitions>
+        <Canvas x:Name="MapCanvas" Grid.ColumnSpan="2" HorizontalAlignment="Center" Height="430" Margin="0,0,0,0" VerticalAlignment="Center" Width="800" Background="Gray" MouseUp="MapClicked"/>
+
+    </Grid>
+</Window>
